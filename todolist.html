@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="">
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script src="todoscript.js" defer></script>
+
+</head>
+
+<style>
+    body {
+        filter: invert(1);
+        margin: none;
+        padding: none;
+        box-sizing: border-box;
+        background-color: #DCA069;
+        color: #000;
+        
+        
+    }
+
+    .title1 {
+        font-size: 100px;
+        color: #007092;
+    }
+
+    .title2 {
+        font-size: 100px;
+        color: #928600;
+    }
+    li {
+
+
+
+input{
+    padding: 10px;
+    
+}
+div{
+width: fit-content;
+display:inline-flex;
+padding: 0;
+margin: 0;
+
+
+}
+}
+    li {
+        font-size: larger;
+
+        button {
+            background-color: transparent;
+            padding: none;
+            outline: none;
+            border: none;
+        }
+
+        background-color: #fff;
+        width:100%;
+    margin: 5px;
+        display: flex;
+        gap: 1px;
+        justify-content: space-between;
+        color: #000;
+        font-weight: 500;
+        
+    }
+
+
+
+    .noteditableinput {
+        border: none;
+        outline: none;
+    }
+
+    .input {
+        border: none;
+        outline: none;
+
+
+    }
+
+    .input:hover {
+        border: none;
+        outline: none;
+    }
+
+    .none {
+        display: none;
+    }
+ #save{
+
+    .img2{
+    display: none;
+}
+ }
+ #save:hover{
+.img2{
+    display: block;
+}
+.img1{
+    display: none;
+}
+ }
+
+.saves {
+    background-color: #000;
+
+}
+
+.img3 {
+    filter: invert(1);
+}
+
+.bggreen{
+    background-color: green;
+    padding: 0;
+}
+.bgcolor{
+    background-color: #FF6F47;
+}
+.bgblack{
+    background-color: #000;
+}
+
+.back {
+        
+        color: wheat;
+        opacity: 0.5;
+        text-decoration: line-through;
+        
+
+    }
+  
+ 
+</style>
+
+<body>
+
+    <center class="justify-center justify-content-center m-3 md:my-16 md:py-20 text-white" id="title">
+        <div class="">
+            <h1 id="titletext" class="text-5xl font-bold " style="color: #FF6F47;">To Do List</h1><br>
+            <div class="flex gap-10 justify-center font-bold text-2xl" style="color:rgb(252, 1, 1) ;">
+                <p id="all">All 0</p>
+                <p id="completedcount">Completed 0</p>
+                <p id="uncompletedcounted">Uncompleted 0</p>
+            </div>
+        </div><br>
+
+        <div class="container justify-center grid gap-5 ">
+            <div class="input text-dark flex justify-center gap-1">
+                <div class="inputdiv flex justify-center bg-white w-fit text-dark px-0 sm:pe-2 gap-2 "
+                    style="color: #000;">
+                    <input type="text" id="input" class="sm:px-20 py-3 md:py-2  font-semibold drop-shadow-2xl " style="font-size: large;background-color: inherit;width: 100%;"><button id="save" type="submit"
+                        style="color: #000;"><img src="images/plus-sign.png" alt="" width="30px" class="img1"><img src="images/plus-sign2.png" alt="" width="30px"class="img2"></button>
+                </div>
+                <select name="cars" id="select" onchange="sortask(this.value)" style="color: #000;">
+                    <option value="All">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="uncompleted">Uncompleted</option>
+                </select>
+                
+            </div>
+            <div class="list sm:px-4 pe-0">
+                <ol class="listul grid gap-2 " id="todolist">
+
+                </ol>
+            </div>
+        </div>
+    </center>
+
+
+
+</body>
+
+</html>
