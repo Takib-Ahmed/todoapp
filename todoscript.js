@@ -179,7 +179,7 @@ function showAllTask() {
   const allTasks = document.querySelectorAll('.li'); // Select all <li> elements within the element with id 'todolist'
   
   allTasks.forEach(task => {
-      task.style.display = 'block';
+      task.style.display = 'flex';
   });
 }
 
@@ -188,7 +188,7 @@ function showCompleteTask() {
   console.log()
   allTasks.forEach(task => {
       if (task.classList.contains('back')) {
-          task.style.display = 'block';
+          task.style.display = 'flex';
       } else {
           task.style.display = 'none';
       }
@@ -201,7 +201,7 @@ function showUncompleteTask() {
       if (task.classList.contains('back')) {
           task.style.display = 'none';
       } else {
-          task.style.display = 'block';
+          task.style.display = 'flex';
       }
   });
 }
