@@ -118,7 +118,7 @@ saves.classList.toggle('saves')
         li.classList.toggle('fall');
       setTimeout(() => {
         todolist.removeChild(li);
-      }, 200);
+      }, 300);
         
 
 
