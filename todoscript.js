@@ -115,8 +115,10 @@ saves.classList.toggle('saves')
       document.getElementById('uncompletedcounted').innerText = `Uncompleted ${uncompletedcount}`;
       
       delet.addEventListener('click', function () {
-        li.classList.toggle('fall')
+        li.classList.toggle('fall');
+      setTimeout(() => {
         todolist.removeChild(li);
+      }, 200);
         
 
 
